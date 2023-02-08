@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		42ABAF692993DCC000FF2D39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF682993DCC000FF2D39 /* AppDelegate.swift */; };
 		42ABAF6B2993DCC000FF2D39 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF6A2993DCC000FF2D39 /* SceneDelegate.swift */; };
-		42ABAF6D2993DCC000FF2D39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF6C2993DCC000FF2D39 /* ViewController.swift */; };
 		42ABAF702993DCC000FF2D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABAF6E2993DCC000FF2D39 /* Main.storyboard */; };
-		42ABAF732993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF712993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodeld */; };
 		42ABAF752993DCC300FF2D39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42ABAF742993DCC300FF2D39 /* Assets.xcassets */; };
 		42ABAF782993DCC300FF2D39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42ABAF762993DCC300FF2D39 /* LaunchScreen.storyboard */; };
+		42ABAF832993DD4600FF2D39 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF822993DD4600FF2D39 /* PlayerViewController.swift */; };
+		42ABAF852993DD7E00FF2D39 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF842993DD7E00FF2D39 /* UIView+Shadow.swift */; };
+		42ABAF872993DD9E00FF2D39 /* PlayPauseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABAF862993DD9E00FF2D39 /* PlayPauseButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42ABAF652993DCC000FF2D39 /* MusicApp_constraints+UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MusicApp_constraints+UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42ABAF682993DCC000FF2D39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42ABAF6A2993DCC000FF2D39 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42ABAF6C2993DCC000FF2D39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		42ABAF6F2993DCC000FF2D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42ABAF722993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MusicApp_constraints_UI.xcdatamodel; sourceTree = "<group>"; };
 		42ABAF742993DCC300FF2D39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42ABAF772993DCC300FF2D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42ABAF792993DCC300FF2D39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42ABAF822993DD4600FF2D39 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		42ABAF842993DD7E00FF2D39 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		42ABAF862993DD9E00FF2D39 /* PlayPauseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPauseButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		42ABAF672993DCC000FF2D39 /* MusicApp_constraints+UI */ = {
 			isa = PBXGroup;
 			children = (
+				42ABAF812993DD0300FF2D39 /* ViewControllers */,
+				42ABAF802993DCF700FF2D39 /* Extensions */,
+				42ABAF7F2993DCE200FF2D39 /* Views */,
 				42ABAF682993DCC000FF2D39 /* AppDelegate.swift */,
 				42ABAF6A2993DCC000FF2D39 /* SceneDelegate.swift */,
-				42ABAF6C2993DCC000FF2D39 /* ViewController.swift */,
 				42ABAF6E2993DCC000FF2D39 /* Main.storyboard */,
 				42ABAF742993DCC300FF2D39 /* Assets.xcassets */,
 				42ABAF762993DCC300FF2D39 /* LaunchScreen.storyboard */,
 				42ABAF792993DCC300FF2D39 /* Info.plist */,
-				42ABAF712993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodeld */,
 			);
 			path = "MusicApp_constraints+UI";
+			sourceTree = "<group>";
+		};
+		42ABAF7F2993DCE200FF2D39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42ABAF822993DD4600FF2D39 /* PlayerViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		42ABAF802993DCF700FF2D39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42ABAF842993DD7E00FF2D39 /* UIView+Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42ABAF812993DD0300FF2D39 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42ABAF862993DD9E00FF2D39 /* PlayPauseButton.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42ABAF6D2993DCC000FF2D39 /* ViewController.swift in Sources */,
+				42ABAF852993DD7E00FF2D39 /* UIView+Shadow.swift in Sources */,
 				42ABAF692993DCC000FF2D39 /* AppDelegate.swift in Sources */,
-				42ABAF732993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodeld in Sources */,
 				42ABAF6B2993DCC000FF2D39 /* SceneDelegate.swift in Sources */,
+				42ABAF872993DD9E00FF2D39 /* PlayPauseButton.swift in Sources */,
+				42ABAF832993DD4600FF2D39 /* PlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,19 +390,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		42ABAF712993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				42ABAF722993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodel */,
-			);
-			currentVersion = 42ABAF722993DCC000FF2D39 /* MusicApp_constraints_UI.xcdatamodel */;
-			path = MusicApp_constraints_UI.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 42ABAF5D2993DCC000FF2D39 /* Project object */;
 }
